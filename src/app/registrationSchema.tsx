@@ -1,4 +1,4 @@
-import { z } from 'zod'
+import { z } from 'zod';
 
 
 export const schema = z.object({
@@ -11,12 +11,4 @@ export const schema = z.object({
     email: z.string().trim().email({
         message: 'Invalid email address'
     }),
-})
-
-// const registrationSchema = () => {
-//     return (
-//         <div>registrationSchema</div>
-//     )
-// }
-
-// export default registrationSchema
+});
